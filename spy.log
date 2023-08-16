@@ -1,0 +1,6 @@
+1692177636064|3|statement|connection 0|url jdbc:p6spy:h2:mem:test|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1692177636079|4|statement|connection 0|url jdbc:p6spy:h2:mem:test|create table member (id bigint not null, age integer, name varchar(255), primary key (id))|create table member (id bigint not null, age integer, name varchar(255), primary key (id))
+1692177636079|1|statement|connection 0|url jdbc:p6spy:h2:mem:test|create sequence hibernate_sequence start with 1 increment by 1|create sequence hibernate_sequence start with 1 increment by 1
+1692177672411|3|statement|connection 0|url jdbc:p6spy:h2:mem:test|select * from INFORMATION_SCHEMA.SEQUENCES|select * from INFORMATION_SCHEMA.SEQUENCES
+1692177672435|4|statement|connection 0|url jdbc:p6spy:h2:mem:test|create table member (id bigint not null, age integer, name varchar(255), primary key (id))|create table member (id bigint not null, age integer, name varchar(255), primary key (id))
+1692177672438|1|statement|connection 0|url jdbc:p6spy:h2:mem:test|create sequence hibernate_sequence start with 1 increment by 1|create sequence hibernate_sequence start with 1 increment by 1
