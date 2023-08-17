@@ -1,6 +1,5 @@
 package com.example.demo.logging;
 
-import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -19,9 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 import java.util.stream.Stream;
 
 @ManagedResource
@@ -70,8 +67,6 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     }
 
     protected void doFilterWrapped(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, FilterChain filterChain) throws ServletException, IOException {
-
-        MDC.put("traceId", UUID.randomUUID().toString());
         StringBuilder msg = new StringBuilder();
 
         try {
@@ -83,7 +78,6 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
             if(log.isInfoEnabled()) {
                 log.info(msg.toString());
             }
-            MDC.clear();
             response.copyBodyToResponse();
         }
     }
@@ -91,18 +85,14 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     protected void beforeRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
             msg.append("\n");
-            logRequestHeader(request, "[REQUEST HEADER::"+getPrefixOfUUID() + "] =>", msg);
+            logRequestHeader(request, "[REQUEST HEADER] =>", msg);
         }
-    }
-
-    private String getPrefixOfUUID(){
-        return MDC.get("traceId");
     }
 
     protected void afterRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
-            logRequestBody(request, "[REQUEST::"+getPrefixOfUUID() + "] =>", msg);
-            logResponse(response, "[RESPONSE::"+getPrefixOfUUID() + "] <=", msg);
+            logRequestBody(request, "[REQUEST] =>", msg);
+            logResponse(response, "[RESPONSE] <=", msg);
         }
     }
 
