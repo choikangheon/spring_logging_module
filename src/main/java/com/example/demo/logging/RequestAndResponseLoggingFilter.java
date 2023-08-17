@@ -102,7 +102,6 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     protected void afterRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
             logRequestBody(request, "[REQUEST::"+getPrefixOfUUID() + "] =>", msg);
-            msg.append("\n-- RESPONSE --\n");
             logResponse(response, "[RESPONSE::"+getPrefixOfUUID() + "] <=", msg);
         }
     }
