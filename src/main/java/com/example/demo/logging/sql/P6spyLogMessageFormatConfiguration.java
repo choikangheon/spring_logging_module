@@ -1,4 +1,4 @@
-package com.example.demo.logging;
+package com.example.demo.logging.sql;
 
 import com.p6spy.engine.spy.P6SpyOptions;
 import org.springframework.context.annotation.Configuration;

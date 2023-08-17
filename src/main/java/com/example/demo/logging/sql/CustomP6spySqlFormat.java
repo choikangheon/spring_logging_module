@@ -4,6 +4,7 @@ import com.p6spy.engine.logging.Category;
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.engine.jdbc.internal.FormatStyle;
+import org.slf4j.MDC;
 
 import java.util.Locale;
 
@@ -12,7 +13,7 @@ public class CustomP6spySqlFormat implements MessageFormattingStrategy {
     @Override
     public String formatMessage(int connectionId, String now, long elapsed, String category, String prepared, String sql, String url) {
         sql = formatSql(category, sql);
-        return "\n"+now + "|" + elapsed + "ms|" + category + "|connection " + connectionId + "|" + sql;
+        return now + "|" + elapsed + "ms|" + category + "|connection " + connectionId + "|" + sql;
     }
 
     private String formatSql(String category,String sql) {
