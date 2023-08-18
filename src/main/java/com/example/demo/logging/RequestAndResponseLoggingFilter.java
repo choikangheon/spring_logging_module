@@ -2,7 +2,6 @@ package com.example.demo.logging;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.jmx.export.annotation.ManagedOperation;
@@ -84,8 +83,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
 
     protected void beforeRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
-            msg.append("\n");
-            logRequestHeader(request, "[REQUEST HEADER] =>", msg);
+            logRequestHeader(request, "\n[REQUEST HEADER] =>", msg);
         }
     }
 
@@ -103,7 +101,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
         } else {
             msg.append(String.format("%s %s %s?%s", prefix, request.getMethod(), request.getRequestURI(), queryString)).append("\n");
         }
-        msg.append(prefix).append("\n");
+
     }
 
     private static void logRequestBody(ContentCachingRequestWrapper request, String prefix, StringBuilder msg) {
@@ -141,7 +139,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
         if (visible) {
             try {
                 String contentString = new String(content, contentEncoding);
-                Stream.of(contentString.split("\r\n|\r|\n")).forEach(line -> msg.append(prefix).append(" ").append(line).append("\n"));
+                Stream.of(contentString.split("\r\n|\r|\n")).forEach(line -> msg.append(" ").append(line).append(" "));
             } catch (UnsupportedEncodingException e) {
                 msg.append(String.format("%s [%d bytes content]", prefix, content.length)).append("\n");
             }
