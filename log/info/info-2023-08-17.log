@@ -1,0 +1,222 @@
+[startup] [2023-08-17 17:22:14:539 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting DemoApplication using Java 17.0.6 on 1-20-122 with PID 22372 (D:\Project\log_trace\build\classes\java\main started by 1-20-122 in D:\Project\log_trace)
+[startup] [2023-08-17 17:22:14:542 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m637[0;39m][0;39m - The following 1 profile is active: "dev"
+[startup] [2023-08-17 17:22:14:1024] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[startup] [2023-08-17 17:22:14:1070] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+[startup] [2023-08-17 17:22:15:1462] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[startup] [2023-08-17 17:22:15:1468] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:22:15:1470] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[startup] [2023-08-17 17:22:15:1470] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[startup] [2023-08-17 17:22:15:1613] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[startup] [2023-08-17 17:22:15:1613] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 1031 ms
+[startup] [2023-08-17 17:22:15:1789] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[startup] [2023-08-17 17:22:15:1873] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[startup] [2023-08-17 17:22:15:1918] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[startup] [2023-08-17 17:22:15:1951] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.15.Final
+[startup] [2023-08-17 17:22:15:2051] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[startup] [2023-08-17 17:22:16:2137] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[startup] [2023-08-17 17:22:16:2518] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260536422 | took 1ms | statement | connection 2| url jdbc:h2:mem:a364c3a1-dec1-4cc6-b189-ceb00f949016
+drop table if exists member CASCADE 
+drop table if exists member CASCADE ;
+[startup] [2023-08-17 17:22:16:2519] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260536423 | took 0ms | statement | connection 2| url jdbc:h2:mem:a364c3a1-dec1-4cc6-b189-ceb00f949016
+drop sequence if exists hibernate_sequence
+drop sequence if exists hibernate_sequence;
+[startup] [2023-08-17 17:22:16:2523] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260536427 | took 1ms | statement | connection 3| url jdbc:h2:mem:a364c3a1-dec1-4cc6-b189-ceb00f949016
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+[startup] [2023-08-17 17:22:16:2527] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260536431 | took 3ms | statement | connection 3| url jdbc:h2:mem:a364c3a1-dec1-4cc6-b189-ceb00f949016
+create table member (id bigint not null, age integer, name varchar(255), primary key (id))
+create table member (id bigint not null, age integer, name varchar(255), primary key (id));
+[startup] [2023-08-17 17:22:16:2529] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[startup] [2023-08-17 17:22:16:2536] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:22:16:3000] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:22:16:3019] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[startup] [2023-08-17 17:22:16:3028] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started DemoApplication in 2.891 seconds (JVM running for 3.563)
+[startup] [2023-08-17 17:22:22:8383] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[startup] [2023-08-17 17:22:22:8383] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[startup] [2023-08-17 17:22:22:8384] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 1 ms
+[846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] [2023-08-17 17:22:22:8502] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260542402|5ms|statement|connection 4|
+    select
+        member0_.id as id1_0_0_,
+        member0_.age as age2_0_0_,
+        member0_.name as name3_0_0_ 
+    from
+        member member0_ 
+    where
+        member0_.id=2
+[846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] [2023-08-17 17:22:22:8514] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260542418|0ms|statement|connection 4|
+    call next value for hibernate_sequence
+[846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] [2023-08-17 17:22:22:8531] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260542435|1ms|statement|connection 4|
+    insert 
+    into
+        member
+        (age, name, id) 
+    values
+        (25, 'kangheon', 1)
+[846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] [2023-08-17 17:22:22:8533] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260542437|0ms|commit|connection 4|
+[846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] [2023-08-17 17:22:22:8557] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.example.demo.logging.RequestAndResponseLoggingFilter.doFilterWrapped:[33m80[0;39m][0;39m - 
+[REQUEST HEADER::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] => POST /v1/member?settle=22
+[REQUEST HEADER::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] =>
+[REQUEST::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] => {
+[REQUEST::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] =>   "id": 2,
+[REQUEST::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] =>   "name": "kangheon",
+[REQUEST::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] =>   "age": 25
+[REQUEST::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] => }
+[RESPONSE::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] <= 200 OK
+[RESPONSE::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] <=
+[RESPONSE::846ccce7-f2a2-4d9d-aec2-c0ff34cc8918] <= {"id":1,"name":"kangheon","age":25}
+
+[startup] [2023-08-17 17:22:29:15813] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:22:29:15813] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform:[33m538[0;39m][0;39m - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[startup] [2023-08-17 17:22:29:15815] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260549719|1ms|statement|connection 5|
+    drop table if exists member CASCADE 
+[startup] [2023-08-17 17:22:29:15816] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260549720|0ms|statement|connection 5|
+    drop sequence if exists hibernate_sequence
+[startup] [2023-08-17 17:22:29:15817] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[startup] [2023-08-17 17:22:29:15821] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.
+[startup] [2023-08-17 17:28:08:514 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting DemoApplication using Java 17.0.6 on 1-20-122 with PID 16764 (D:\Project\log_trace\build\classes\java\main started by 1-20-122 in D:\Project\log_trace)
+[startup] [2023-08-17 17:28:08:517 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m637[0;39m][0;39m - The following 1 profile is active: "dev"
+[startup] [2023-08-17 17:28:09:1034] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[startup] [2023-08-17 17:28:09:1082] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+[startup] [2023-08-17 17:28:09:1485] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[startup] [2023-08-17 17:28:09:1491] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:28:09:1492] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[startup] [2023-08-17 17:28:09:1492] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[startup] [2023-08-17 17:28:09:1595] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[startup] [2023-08-17 17:28:09:1595] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 1030 ms
+[startup] [2023-08-17 17:28:09:1760] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[startup] [2023-08-17 17:28:10:1843] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[startup] [2023-08-17 17:28:10:1887] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[startup] [2023-08-17 17:28:10:1921] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.15.Final
+[startup] [2023-08-17 17:28:10:2020] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[startup] [2023-08-17 17:28:10:2110] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[startup] [2023-08-17 17:28:10:2466] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260890630 | took 1ms | statement | connection 2| url jdbc:h2:mem:98d41829-4cd2-47cd-b517-54c217005554
+drop table if exists member CASCADE 
+drop table if exists member CASCADE ;
+[startup] [2023-08-17 17:28:10:2467] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260890631 | took 0ms | statement | connection 2| url jdbc:h2:mem:98d41829-4cd2-47cd-b517-54c217005554
+drop sequence if exists hibernate_sequence
+drop sequence if exists hibernate_sequence;
+[startup] [2023-08-17 17:28:10:2471] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260890635 | took 1ms | statement | connection 3| url jdbc:h2:mem:98d41829-4cd2-47cd-b517-54c217005554
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+[startup] [2023-08-17 17:28:10:2475] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692260890639 | took 4ms | statement | connection 3| url jdbc:h2:mem:98d41829-4cd2-47cd-b517-54c217005554
+create table member (id bigint not null, age integer, name varchar(255), primary key (id))
+create table member (id bigint not null, age integer, name varchar(255), primary key (id));
+[startup] [2023-08-17 17:28:10:2477] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[startup] [2023-08-17 17:28:10:2485] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:28:11:2953] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:28:11:2971] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[startup] [2023-08-17 17:28:11:2980] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started DemoApplication in 2.858 seconds (JVM running for 3.451)
+[startup] [2023-08-17 17:28:21:13139] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[startup] [2023-08-17 17:28:21:13140] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m525[0;39m][0;39m - Initializing Servlet 'dispatcherServlet'
+[startup] [2023-08-17 17:28:21:13140] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[org.springframework.web.servlet.FrameworkServlet.initServletBean:[33m547[0;39m][0;39m - Completed initialization in 0 ms
+[e51ff4fb-9812-46f0-9bf9-4b616a942e05] [2023-08-17 17:28:21:13265] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260901424|6ms|statement|connection 4|
+    select
+        member0_.id as id1_0_0_,
+        member0_.age as age2_0_0_,
+        member0_.name as name3_0_0_ 
+    from
+        member member0_ 
+    where
+        member0_.id=2
+[e51ff4fb-9812-46f0-9bf9-4b616a942e05] [2023-08-17 17:28:21:13278] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260901442|0ms|statement|connection 4|
+    call next value for hibernate_sequence
+[e51ff4fb-9812-46f0-9bf9-4b616a942e05] [2023-08-17 17:28:21:13298] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260901462|1ms|statement|connection 4|
+    insert 
+    into
+        member
+        (age, name, id) 
+    values
+        (25, 'kangheon', 1)
+[e51ff4fb-9812-46f0-9bf9-4b616a942e05] [2023-08-17 17:28:21:13300] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692260901464|0ms|commit|connection 4|
+[e51ff4fb-9812-46f0-9bf9-4b616a942e05] [2023-08-17 17:28:21:13324] [32m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m [1;37m[com.example.demo.logging.RequestAndResponseLoggingFilter.doFilterWrapped:[33m79[0;39m][0;39m - 
+[REQUEST HEADER] => POST /v1/member?settle=22
+[REQUEST HEADER] =>
+[REQUEST] => {
+[REQUEST] =>   "id": 2,
+[REQUEST] =>   "name": "kangheon",
+[REQUEST] =>   "age": 25
+[REQUEST] => }
+[RESPONSE] <= 200 OK
+[RESPONSE] <=
+[RESPONSE] <= {"id":1,"name":"kangheon","age":25}
+
+[f254fbfd-62e4-4d6e-aaa0-242d6277b99b] [2023-08-17 17:30:22:134824] [32m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261022988|0ms|statement|connection 5|
+    select
+        member0_.id as id1_0_0_,
+        member0_.age as age2_0_0_,
+        member0_.name as name3_0_0_ 
+    from
+        member member0_ 
+    where
+        member0_.id=2
+[f254fbfd-62e4-4d6e-aaa0-242d6277b99b] [2023-08-17 17:30:22:134824] [32m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261022988|0ms|statement|connection 5|
+    call next value for hibernate_sequence
+[f254fbfd-62e4-4d6e-aaa0-242d6277b99b] [2023-08-17 17:30:22:134825] [32m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261022989|0ms|statement|connection 5|
+    insert 
+    into
+        member
+        (age, name, id) 
+    values
+        (25, 'kangheon', 2)
+[f254fbfd-62e4-4d6e-aaa0-242d6277b99b] [2023-08-17 17:30:22:134825] [32m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261022989|0ms|commit|connection 5|
+[f254fbfd-62e4-4d6e-aaa0-242d6277b99b] [2023-08-17 17:30:22:134827] [32m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m [1;37m[com.example.demo.logging.RequestAndResponseLoggingFilter.doFilterWrapped:[33m79[0;39m][0;39m - 
+[REQUEST HEADER] => POST /v1/member?settle=22
+[REQUEST HEADER] =>
+[REQUEST] => {
+[REQUEST] =>   "id": 2,
+[REQUEST] =>   "name": "kangheon",
+[REQUEST] =>   "age": 25
+[REQUEST] => }
+[RESPONSE] <= 200 OK
+[RESPONSE] <=
+[RESPONSE] <= {"id":2,"name":"kangheon","age":25}
+
+[startup] [2023-08-17 17:30:25:137805] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:30:25:137806] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform:[33m538[0;39m][0;39m - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[startup] [2023-08-17 17:30:25:137808] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261025972|0ms|statement|connection 6|
+    drop table if exists member CASCADE 
+[startup] [2023-08-17 17:30:25:137808] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261025972|0ms|statement|connection 6|
+    drop sequence if exists hibernate_sequence
+[startup] [2023-08-17 17:30:25:137809] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[startup] [2023-08-17 17:30:25:137811] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.
+[startup] [2023-08-17 17:30:28:890 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarting:[33m55[0;39m][0;39m - Starting DemoApplication using Java 17.0.6 on 1-20-122 with PID 2504 (D:\Project\log_trace\build\classes\java\main started by 1-20-122 in D:\Project\log_trace)
+[startup] [2023-08-17 17:30:28:894 ] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.SpringApplication.logStartupProfileInfo:[33m637[0;39m][0;39m - The following 1 profile is active: "dev"
+[startup] [2023-08-17 17:30:29:1552] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m132[0;39m][0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[startup] [2023-08-17 17:30:29:1600] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:[33m201[0;39m][0;39m - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+[startup] [2023-08-17 17:30:29:1985] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:[33m108[0;39m][0;39m - Tomcat initialized with port(s): 8080 (http)
+[startup] [2023-08-17 17:30:29:1990] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:30:29:1991] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting service [Tomcat]
+[startup] [2023-08-17 17:30:29:1991] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting Servlet engine: [Apache Tomcat/9.0.78]
+[startup] [2023-08-17 17:30:29:2091] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Initializing Spring embedded WebApplicationContext
+[startup] [2023-08-17 17:30:29:2092] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:[33m292[0;39m][0;39m - Root WebApplicationContext: initialization completed in 1144 ms
+[startup] [2023-08-17 17:30:30:2280] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m110[0;39m][0;39m - HikariPool-1 - Starting...
+[startup] [2023-08-17 17:30:30:2371] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.getConnection:[33m123[0;39m][0;39m - HikariPool-1 - Start completed.
+[startup] [2023-08-17 17:30:30:2420] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:[33m31[0;39m][0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+[startup] [2023-08-17 17:30:30:2455] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.Version.logVersion:[33m44[0;39m][0;39m - HHH000412: Hibernate ORM core version 5.6.15.Final
+[startup] [2023-08-17 17:30:30:2559] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit>:[33m56[0;39m][0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[startup] [2023-08-17 17:30:30:2660] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.dialect.Dialect.<init>:[33m175[0;39m][0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[startup] [2023-08-17 17:30:30:3048] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692261030852 | took 1ms | statement | connection 2| url jdbc:h2:mem:db6509f1-9aff-4a14-96b7-11432d51146e
+drop table if exists member CASCADE 
+drop table if exists member CASCADE ;
+[startup] [2023-08-17 17:30:30:3049] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692261030853 | took 0ms | statement | connection 2| url jdbc:h2:mem:db6509f1-9aff-4a14-96b7-11432d51146e
+drop sequence if exists hibernate_sequence
+drop sequence if exists hibernate_sequence;
+[startup] [2023-08-17 17:30:30:3053] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692261030857 | took 1ms | statement | connection 3| url jdbc:h2:mem:db6509f1-9aff-4a14-96b7-11432d51146e
+create sequence hibernate_sequence start with 1 increment by 1
+create sequence hibernate_sequence start with 1 increment by 1;
+[startup] [2023-08-17 17:30:30:3058] [32m[main][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - #1692261030862 | took 4ms | statement | connection 3| url jdbc:h2:mem:db6509f1-9aff-4a14-96b7-11432d51146e
+create table member (id bigint not null, age integer, name varchar(255), primary key (id))
+create table member (id bigint not null, age integer, name varchar(255), primary key (id));
+[startup] [2023-08-17 17:30:30:3060] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:[33m52[0;39m][0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[startup] [2023-08-17 17:30:30:3073] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory:[33m437[0;39m][0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:30:31:3544] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.apache.juli.logging.DirectJDKLog.log:[33m173[0;39m][0;39m - Starting ProtocolHandler ["http-nio-8080"]
+[startup] [2023-08-17 17:30:31:3564] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:[33m220[0;39m][0;39m - Tomcat started on port(s): 8080 (http) with context path ''
+[startup] [2023-08-17 17:30:31:3573] [32m[main][0;39m [34mINFO [0;39m [1;37m[org.springframework.boot.StartupInfoLogger.logStarted:[33m61[0;39m][0;39m - Started DemoApplication in 3.413 seconds (JVM running for 4.221)
+[startup] [2023-08-17 17:30:48:20863] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.destroy:[33m651[0;39m][0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+[startup] [2023-08-17 17:30:48:20864] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl.perform:[33m538[0;39m][0;39m - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[startup] [2023-08-17 17:30:48:20871] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261048670|1ms|statement|connection 4|
+    drop table if exists member CASCADE 
+[startup] [2023-08-17 17:30:48:20872] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.p6spy.engine.spy.appender.Slf4JLogger.logSQL:[33m60[0;39m][0;39m - 1692261048676|0ms|statement|connection 4|
+    drop sequence if exists hibernate_sequence
+[startup] [2023-08-17 17:30:48:20873] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m350[0;39m][0;39m - HikariPool-1 - Shutdown initiated...
+[startup] [2023-08-17 17:30:48:20876] [32m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m [1;37m[com.zaxxer.hikari.HikariDataSource.close:[33m352[0;39m][0;39m - HikariPool-1 - Shutdown completed.

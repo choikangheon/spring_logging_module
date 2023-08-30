@@ -18,7 +18,7 @@ public class LoggingConfiguration {
         registration.setFilter(requestAndResponseLoggingFilter());
         registration.setUrlPatterns(Arrays.asList("/v1/*"));
         registration.setName("requestResponseLoggingFilter");
-        registration.setOrder(2);
+//        registration.setOrder(2);
         return registration;
     }
 
