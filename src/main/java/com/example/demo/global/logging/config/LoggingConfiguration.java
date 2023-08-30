@@ -1,10 +1,10 @@
-package com.example.demo.logging.config;
+package com.example.demo.global.logging.config;
 
 import java.util.Arrays;
 
 import javax.servlet.Filter;
 
-import com.example.demo.logging.RequestAndResponseLoggingFilter;
+import com.example.demo.global.logging.RequestAndResponseLoggingFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

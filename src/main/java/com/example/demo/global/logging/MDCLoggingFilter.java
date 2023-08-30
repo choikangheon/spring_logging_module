@@ -1,4 +1,4 @@
-package com.example.demo.logging;
+package com.example.demo.global.logging;
 
 import org.slf4j.MDC;
 import org.springframework.core.Ordered;
