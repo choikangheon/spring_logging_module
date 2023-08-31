@@ -83,14 +83,14 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
 
     protected void beforeRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
-            logRequestHeader(request, "\n[Request URL] =>", msg);
+            logRequestHeader(request, "\n[Request-URI] =>", msg);
         }
     }
 
     protected void afterRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
-            logRequestBody(request, "[REQUEST] =>", msg);
-            logResponse(response, "[RESPONSE] <=", msg);
+            logRequestBody(request, "[Request] => ", msg);
+            logResponse(response, "[Response] <= ", msg);
         }
     }
 
@@ -107,13 +107,14 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     private static void logRequestBody(ContentCachingRequestWrapper request, String prefix, StringBuilder msg) {
         byte[] content = request.getContentAsByteArray();
         if (content.length > 0) {
+            msg.append("[Request-Body] => ");
             logContent(content, request.getContentType(), request.getCharacterEncoding(), prefix, msg);
         }
     }
 
     private static void logResponse(ContentCachingResponseWrapper response, String prefix, StringBuilder msg) {
         int status = response.getStatus();
-        msg.append(String.format("\n[Response-HttpStatus] %s %s", status, HttpStatus.valueOf(status).getReasonPhrase())).append("\n");
+        msg.append(String.format("\n[Response-HttpStatus] <= %s %s", status, HttpStatus.valueOf(status).getReasonPhrase())).append("\n");
         response.getHeaderNames()
                 .forEach(headerName ->
                         response.getHeaders(headerName)
