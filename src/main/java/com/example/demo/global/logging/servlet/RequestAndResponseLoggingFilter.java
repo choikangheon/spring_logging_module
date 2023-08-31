@@ -1,4 +1,4 @@
-package com.example.demo.global.logging;
+package com.example.demo.global.logging.servlet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
