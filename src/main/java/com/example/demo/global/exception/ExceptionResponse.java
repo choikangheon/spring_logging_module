@@ -2,7 +2,6 @@ package com.example.demo.global.exception;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -15,13 +14,13 @@ public class ExceptionResponse<T>{
     private int statusCode;
     private String responseCode;
     private String responseMessage;
-    private Map<String,String> responseMap;
+    private Map<String,String> responseErrors;
 
     @Builder
-    public ExceptionResponse(int statusCode, String responseCode, String responseMessage, Map<String, String> responseMap) {
+    public ExceptionResponse(int statusCode, String responseCode, String responseMessage, Map<String, String> responseErrors) {
         this.statusCode = statusCode;
         this.responseCode = responseCode;
         this.responseMessage = responseMessage;
-        this.responseMap = responseMap;
+        this.responseErrors = responseErrors;
     }
 }

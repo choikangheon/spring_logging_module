@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 @Getter
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum ErrorCode {
-    INVALID_INPUT_VALUE_BINDING_ERROR(HttpStatus.BAD_REQUEST.value(), "ECIIVBE400");
+    INVALID_INPUT_VALUE_BINDING_ERROR(HttpStatus.BAD_REQUEST.value(), "INVALID_INPUT_VALUE");
 
     private final String code;
     private int status;

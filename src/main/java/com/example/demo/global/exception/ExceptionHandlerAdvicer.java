@@ -24,7 +24,7 @@ public class ExceptionHandlerAdvicer {
         ExceptionResponse response = ExceptionResponse.builder()
                 .statusCode(ErrorCode.INVALID_INPUT_VALUE_BINDING_ERROR.getStatus())
                 .responseCode(ErrorCode.INVALID_INPUT_VALUE_BINDING_ERROR.getCode())
-                .responseMap(errorMap)
+                .responseErrors(errorMap)
                 .build();
         return new ResponseEntity(response, HttpStatus.valueOf(response.getStatusCode()));
     }
