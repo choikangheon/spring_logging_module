@@ -140,7 +140,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
         if (visible) {
             try {
                 String contentString = new String(content, contentEncoding);
-                Stream.of(contentString.split("\r\n|\r|\n")).forEach(line -> msg.append(line));
+                Stream.of(contentString.split("\r\n|\r|\n")).forEach(line -> msg.append(line.trim()));
             } catch (UnsupportedEncodingException e) {
                 msg.append(String.format("%s [%d bytes content]", prefix, content.length)).append("\n");
             }
