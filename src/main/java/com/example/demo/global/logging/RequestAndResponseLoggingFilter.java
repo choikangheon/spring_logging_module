@@ -152,7 +152,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     /**
      * Determine if a given header name should have its value logged.
      * @param headerName HTTP header name.
-     * @return True if the header is sensitive (i.e. its value should <b>not</b> be logged).
+     * @return True if the header is sensitive ( i.e. its value should <b>not</b> be logged).
      */
     private static boolean isSensitiveHeader(String headerName) {
         return SENSITIVE_HEADERS.contains(headerName.toLowerCase());

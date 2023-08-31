@@ -4,5 +4,3 @@ spring:
       on-profile: local
 
 # Add p6spy profile
-
-
