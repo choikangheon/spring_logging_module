@@ -90,7 +90,7 @@ public class RequestAndResponseLoggingFilter extends OncePerRequestFilter {
     protected void afterRequest(ContentCachingRequestWrapper request, ContentCachingResponseWrapper response, StringBuilder msg) {
         if (enabled && log.isInfoEnabled()) {
             logRequestBody(request, "[Request] => ", msg);
-            logResponse(response, "[Response] <= ", msg);
+            logResponse(response, "[Response-Body] <= ", msg);
         }
     }
 
